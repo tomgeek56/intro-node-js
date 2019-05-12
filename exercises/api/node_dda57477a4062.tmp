@@ -30,12 +30,9 @@ const router = {
     asset: 'index.html',
     mime: mime.getType('html') 
   },
-  '/styles.css GET':{
-  
     asset: 'style.css',
     mime: mime.getType('css')
   }
-}
 
 // log incoming request coming into the server. Helpful for debugging and tracking
 const logRequest = (method, route, status) => console.log(method, route, status)
